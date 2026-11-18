@@ -1,0 +1,27 @@
+
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+
+# Build files
+dist/
+build/
+coverage/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Local databases
+*.db
+*.sqlite
+
+# Operating system
+.DS_Store
+Thumbs.db

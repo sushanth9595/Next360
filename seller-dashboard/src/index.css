@@ -1,0 +1,1875 @@
+/* =========================
+   Seller Orders Page
+   ========================= */
+
+.orders-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.order-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.order-card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.order-card h3 {
+    margin: 12px 0;
+}
+
+.order-card img {
+    display: block;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.order-card p {
+    margin: 8px 0;
+}
+
+.order-card label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.order-card select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.order-card select:focus {
+    outline: none;
+    border-color: #2e7d32;
+}
+
+.order-card select:disabled {
+    background: #f0f0f0;
+    color: #777;
+    cursor: not-allowed;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .orders-list {
+        grid-template-columns: 1fr;
+    }
+
+    .order-card {
+        padding: 15px;
+    }
+}
+
+/* =========================
+   Seller Earnings Page
+   ========================= */
+
+.earnings-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 25px 0 35px;
+}
+
+.earnings-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.earnings-card h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+.earnings-card p {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.earnings-orders {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.earnings-order-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.earnings-order-card h3 {
+    margin-top: 0;
+}
+
+.earnings-order-card p {
+    margin: 8px 0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .earnings-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .earnings-card {
+        padding: 20px;
+    }
+}
+
+/* Development OTP */
+
+.development-otp {
+    margin: 15px 0;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #2e7d32;
+    border-radius: 8px;
+    background: #f1f8f3;
+}
+
+.development-otp p {
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+
+.development-otp strong {
+    font-size: 28px;
+    letter-spacing: 5px;
+}
+
+/* =========================================
+   NEXT360 SELLER DASHBOARD
+   ========================================= */
+
+.seller-dashboard {
+    min-height: 100vh;
+    display: flex;
+    background: #f5f7f5;
+}
+
+/* =========================================
+   SIDEBAR
+   ========================================= */
+
+.seller-sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background: #1b5e20;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.seller-sidebar h2 {
+    margin: 0 0 30px;
+    font-size: 24px;
+}
+
+.seller-sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.seller-sidebar a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.seller-dashboard-content {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.seller-dashboard-content h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+/* =========================================
+   DASHBOARD CARDS
+   ========================================= */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* =========================================
+   FORMS
+   ========================================= */
+
+.seller-dashboard-content form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    max-width: 700px;
+}
+
+.seller-dashboard-content form label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.seller-dashboard-content form input,
+.seller-dashboard-content form select,
+.seller-dashboard-content form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.seller-dashboard-content form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* =========================================
+   PROFILE / KYC
+   ========================================= */
+
+.profile-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    max-width: 700px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.profile-card p {
+    margin: 10px 0;
+}
+
+/* =========================================
+   PRODUCT CARDS
+   ========================================= */
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .seller-sidebar {
+        position: static;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .seller-dashboard {
+        display: block;
+    }
+
+    .seller-dashboard-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .seller-sidebar a {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .products-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   ACTIVE SIDEBAR LINK
+   ========================================= */
+
+.seller-sidebar a.active {
+    background: #ffffff;
+    color: #1b5e20;
+    font-weight: 700;
+}
+
+.seller-sidebar a.active:hover {
+    background: #ffffff;
+    color: #1b5e20;
+}
+
+/* =========================================
+   SELLER LOGOUT BUTTON
+   ========================================= */
+
+.seller-logout-button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 12px 14px;
+    background: #ffffff;
+    color: #1b5e20;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.seller-logout-button:hover {
+    background: #e8f5e9;
+}
+
+/* =========================================
+   SELLER OTP POPUP
+   ========================================= */
+
+.otp-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    z-index: 9999;
+}
+
+.otp-popup {
+    position: relative;
+
+    width: 100%;
+    max-width: 400px;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+    animation: otpPopupShow 0.25s ease-out;
+}
+
+@keyframes otpPopupShow {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.otp-popup-close {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    width: 35px;
+    height: 35px;
+
+    padding: 0;
+
+    background: transparent;
+
+    color: #777;
+
+    font-size: 28px;
+
+    line-height: 35px;
+}
+
+.otp-popup-close:hover {
+    background: #f5f5f5;
+    color: #333;
+}
+
+.otp-icon {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.otp-popup h2 {
+    margin: 5px 0 10px;
+
+    color: #1b5e20;
+
+    font-size: 24px;
+}
+
+.otp-popup-text {
+    margin: 0 auto 20px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.otp-number {
+    display: inline-block;
+
+    min-width: 190px;
+
+    padding: 15px 20px;
+
+    background: #f1f8f3;
+
+    border: 2px dashed #2e7d32;
+
+    border-radius: 10px;
+
+    color: #1b5e20;
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    letter-spacing: 8px;
+
+    box-sizing: border-box;
+}
+
+.otp-popup-note {
+    margin: 12px 0 20px;
+
+    color: #888;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.otp-popup-button {
+    width: 100%;
+
+    padding: 13px;
+
+    background: #2e7d32;
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+    border-radius: 8px;
+}
+
+.otp-popup-button:hover {
+    background: #1b5e20;
+}
+
+@media (max-width: 500px) {
+
+    .otp-popup {
+        padding: 30px 20px;
+    }
+
+    .otp-number {
+        font-size: 28px;
+        letter-spacing: 6px;
+        min-width: 170px;
+    }
+}
+
+/* =========================================
+   NEXT360 SELLER LOGIN PAGE
+   ========================================= */
+
+.seller-login-page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f7f5;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Login Card */
+
+.seller-login-card {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    box-sizing: border-box;
+}
+
+/* Logo */
+
+.seller-login-card h1 {
+    margin: 0;
+    text-align: center;
+    color: #1b5e20;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+/* Page Title */
+
+.seller-login-card h2 {
+    margin: 8px 0 30px;
+    text-align: center;
+    color: #333333;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Form */
+
+.seller-login-card form {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Labels */
+
+.seller-login-card form label {
+    display: block;
+    margin: 15px 0 8px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Inputs */
+
+.seller-login-card form input {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #333333;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.seller-login-card form input:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.10);
+}
+
+/* Main Button */
+
+.seller-login-card form button[type="submit"] {
+    width: 100%;
+    height: 46px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 8px;
+    background: #2e7d32;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.seller-login-card form button[type="submit"]:hover {
+    background: #1b5e20;
+}
+
+.seller-login-card form button[type="submit"]:disabled {
+    background: #81a987;
+    cursor: not-allowed;
+}
+
+/* Change Phone Button */
+
+.seller-login-card form button[type="button"] {
+    width: 100%;
+    height: 44px;
+    margin-top: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background: #f5f5f5;
+    color: #333333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.seller-login-card form button[type="button"]:hover {
+    background: #eeeeee;
+}
+
+/* Message */
+
+.login-message {
+    margin: 18px 0 0;
+    padding: 11px 12px;
+    border-radius: 8px;
+    background: #f5f5f5;
+    color: #555555;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .seller-login-page {
+        padding: 15px;
+    }
+
+    .seller-login-card {
+        padding: 30px 22px;
+        border-radius: 12px;
+    }
+
+    .seller-login-card h1 {
+        font-size: 30px;
+    }
+
+    .seller-login-card h2 {
+        font-size: 20px;
+    }
+}
+
+/* =========================================
+   OTP SENT PHONE INFO
+   ========================================= */
+
+.otp-sent-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    margin: 0 0 22px;
+    padding: 14px;
+
+    background: #f1f8f3;
+    border: 1px solid #d5e8d8;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.otp-sent-info span {
+    color: #666666;
+    font-size: 13px;
+}
+
+.otp-sent-info strong {
+    color: #1b5e20;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   RESEND OTP
+   ========================================= */
+
+.resend-otp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #666666;
+}
+
+.resend-otp-button {
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    color: #2e7d32 !important;
+    font-size: 13px !important;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.resend-otp-button:hover {
+    color: #1b5e20 !important;
+    text-decoration: underline;
+}
+
+.resend-otp-button:disabled {
+    color: #999999 !important;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+/* =========================================
+   SELLER DASHBOARD HOME
+   ========================================= */
+
+.seller-loading {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f7f5;
+    color: #1b5e20;
+}
+
+/* Dashboard Header */
+
+.seller-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.seller-dashboard-label {
+    margin: 0 0 6px;
+    color: #2e7d32;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.seller-dashboard-header h1 {
+    margin: 0;
+    color: #222222;
+    font-size: 30px;
+}
+
+.seller-welcome {
+    margin: 8px 0 0;
+    color: #666666;
+    font-size: 15px;
+}
+
+.seller-welcome strong {
+    color: #1b5e20;
+}
+
+/* Logout */
+
+.dashboard-logout-button {
+    background: #ffffff;
+    color: #c62828;
+    border: 1px solid #e0e0e0;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.dashboard-logout-button:hover {
+    background: #ffebee;
+}
+
+/* Dashboard Home */
+
+.dashboard-home h2 {
+    margin: 0;
+    color: #333333;
+    font-size: 24px;
+}
+
+.dashboard-subtitle {
+    margin: 8px 0 25px;
+    color: #777777;
+}
+
+/* Dashboard Cards */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(240px, 1fr)
+    );
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.dashboard-card-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    background: #f1f8f3;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.dashboard-card h3 {
+    margin: 0 0 10px;
+    color: #222222;
+    font-size: 19px;
+}
+
+.dashboard-card p {
+    min-height: 48px;
+    margin: 0 0 20px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.dashboard-card button {
+    background: #2e7d32;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+.dashboard-card button:hover {
+    background: #1b5e20;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .seller-dashboard-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .seller-dashboard-header h1 {
+        font-size: 25px;
+    }
+
+    .dashboard-logout-button {
+        width: 100%;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   SELLER PROFILE
+   ========================================= */
+
+.page-header {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.page-header h1 {
+    margin: 0;
+    color: #222222;
+    font-size: 30px;
+}
+
+.page-subtitle {
+    margin: 8px 0 0;
+    color: #777777;
+    font-size: 15px;
+}
+
+.profile-message {
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+    border-radius: 8px;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 750px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.profile-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.profile-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f8f3;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.profile-card-header h2 {
+    margin: 0 0 5px;
+    color: #222222;
+    font-size: 21px;
+}
+
+.profile-card-header p {
+    margin: 0;
+    color: #777777;
+    font-size: 14px;
+}
+
+.profile-details {
+    display: grid;
+    gap: 0;
+}
+
+.profile-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 17px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.profile-detail:last-child {
+    border-bottom: none;
+}
+
+.profile-detail span {
+    color: #777777;
+    font-size: 14px;
+}
+
+.profile-detail strong {
+    color: #222222;
+    font-size: 15px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+
+    .page-header h1 {
+        font-size: 25px;
+    }
+
+    .profile-card {
+        padding: 20px;
+    }
+
+    .profile-detail {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .profile-detail strong {
+        text-align: left;
+    }
+}
+
+/* =========================================
+   SELLER PRODUCTS PAGE
+   ========================================= */
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.products-header h1 {
+    margin: 0 0 8px;
+}
+
+.seller-dashboard-label {
+    margin: 0 0 8px;
+    color: #2e7d32;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.page-subtitle {
+    margin: 0;
+    color: #666;
+}
+
+.products-header > button {
+    background: #2e7d32;
+    color: white;
+    font-weight: 600;
+    padding: 11px 18px;
+}
+
+.products-header > button:hover {
+    background: #1b5e20;
+}
+
+.products-message {
+    padding: 12px 15px;
+    margin: 0 0 20px;
+    background: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    color: #1b5e20;
+}
+
+/* Product grid */
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(300px, 1fr)
+    );
+    gap: 24px;
+    margin-top: 20px;
+}
+
+/* Product card */
+
+.product-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+/* Product image */
+
+.product-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 16px;
+    background: #f1f1f1;
+}
+
+/* Product information */
+
+.product-card h3 {
+    margin: 0 0 15px;
+    font-size: 19px;
+    color: #222;
+}
+
+.product-card p {
+    margin: 9px 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+.product-card strong {
+    color: #222;
+}
+
+/* Product action buttons */
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.product-actions button {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 7px;
+    font-weight: 600;
+    background: #2e7d32;
+    color: white;
+}
+
+.product-actions button:hover {
+    background: #1b5e20;
+}
+
+.product-actions button:last-child {
+    background: #f5f5f5;
+    color: #c62828;
+    border: 1px solid #ddd;
+}
+
+.product-actions button:last-child:hover {
+    background: #ffebee;
+}
+
+/* Add / Edit Product form */
+
+.add-product-form {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    max-width: 750px;
+}
+
+.add-product-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.add-product-form form {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.add-product-form form button {
+    margin-top: 18px;
+    margin-right: 10px;
+    background: #2e7d32;
+    color: white;
+    font-weight: 600;
+}
+
+.add-product-form form button:hover {
+    background: #1b5e20;
+}
+
+.add-product-form form button[type="button"] {
+    background: #f5f5f5;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.add-product-form form button[type="button"]:hover {
+    background: #eeeeee;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .products-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .products-header > button {
+        width: 100%;
+    }
+
+    .products-list {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+
+    .product-actions button {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   PRODUCT STATUS & CLASSIFICATION BADGES
+   ========================================= */
+
+.product-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.product-card-top h3 {
+    flex: 1;
+    margin: 0;
+}
+
+/* Status */
+
+.product-status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.product-status-badge.approved {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.product-status-badge.pending {
+    background: #fff8e1;
+    color: #f57f17;
+    border: 1px solid #ffe082;
+}
+
+.product-status-badge.rejected {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+/* Product type and stock badges */
+
+.product-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.product-type-badge,
+.stock-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Organic */
+
+.product-type-badge.organic {
+    background: #e8f5e9;
+    color: #1b5e20;
+    border: 1px solid #a5d6a7;
+}
+
+/* Natural */
+
+.product-type-badge.natural {
+    background: #f1f8e9;
+    color: #558b2f;
+    border: 1px solid #c5e1a5;
+}
+
+/* Eco-friendly */
+
+.product-type-badge.eco-friendly {
+    background: #e0f2f1;
+    color: #00695c;
+    border: 1px solid #80cbc4;
+}
+
+/* Stock */
+
+.stock-badge.in-stock {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.stock-badge.low-stock {
+    background: #fff8e1;
+    color: #ef6c00;
+    border: 1px solid #ffe082;
+}
+
+.stock-badge.out-of-stock {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+/* Image placeholder */
+
+.product-image-placeholder {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    color: #888;
+    font-size: 14px;
+}
+
+/* =========================================
+   ORGANIC CERTIFICATE BUTTON
+   ========================================= */
+
+.certificate-button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px 12px;
+    border: 1px solid #a5d6a7;
+    border-radius: 7px;
+    background: #f1f8e9;
+    color: #2e7d32;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.certificate-button:hover {
+    background: #e8f5e9;
+    border-color: #66bb6a;
+}
+
+/* =========================================
+   SELLER DASHBOARD STATISTICS
+   ========================================= */
+
+.dashboard-statistics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.dashboard-stat-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 14px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-stat-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #e8f5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.dashboard-stat-card p {
+    margin: 0 0 6px;
+    color: #666;
+    font-size: 13px;
+}
+
+.dashboard-stat-card h2 {
+    margin: 0;
+    font-size: 23px;
+    color: #222;
+}
+
+/* =========================================
+   DASHBOARD EARNINGS SUMMARY
+   ========================================= */
+
+.dashboard-earnings-summary {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.dashboard-section-header h2 {
+    margin: 0 0 6px;
+}
+
+.dashboard-section-header p {
+    margin: 0;
+    color: #666;
+}
+
+.dashboard-section-header button {
+    background: #2e7d32;
+    color: white;
+    font-weight: 600;
+}
+
+.dashboard-section-header button:hover {
+    background: #1b5e20;
+}
+
+.dashboard-earnings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.dashboard-earnings-grid > div {
+    padding: 18px;
+    background: #f8faf8;
+    border-radius: 10px;
+    border: 1px solid #e4e9e4;
+}
+
+.dashboard-earnings-grid span {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 13px;
+}
+
+.dashboard-earnings-grid strong {
+    font-size: 21px;
+    color: #222;
+}
+
+/* =========================================
+   DASHBOARD HEADER
+   ========================================= */
+
+.seller-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.seller-dashboard-header h1 {
+    margin: 0 0 8px;
+}
+
+.seller-welcome {
+    margin: 0;
+    color: #666;
+}
+
+.dashboard-logout-button {
+    background: #ffffff;
+    color: #1b5e20;
+    border: 1px solid #c8e6c9;
+    font-weight: 600;
+}
+
+.dashboard-logout-button:hover {
+    background: #e8f5e9;
+}
+
+/* =========================================
+   DASHBOARD QUICK ACTIONS
+   ========================================= */
+
+.dashboard-home {
+    margin-bottom: 30px;
+}
+
+.dashboard-home > h2 {
+    margin-bottom: 6px;
+}
+
+.dashboard-subtitle {
+    margin-top: 0;
+    color: #666;
+}
+
+.dashboard-card-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   RESPONSIVE DASHBOARD
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+    .dashboard-statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .seller-dashboard-header {
+        flex-direction: column;
+    }
+
+    .dashboard-logout-button {
+        width: 100%;
+    }
+
+    .dashboard-statistics {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-earnings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-section-header button {
+        width: 100%;
+    }
+
+}
+
+/* =========================================
+   SELLER PROFILE & KYC
+   ========================================= */
+
+.profile-card,
+.kyc-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+    max-width: 850px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.profile-card-header,
+.kyc-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.profile-icon,
+.kyc-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: #e8f5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.profile-card-header h2,
+.kyc-card-header h2 {
+    margin: 0 0 5px;
+    font-size: 20px;
+}
+
+.profile-card-header p,
+.kyc-card-header p {
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+}
+
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.profile-detail {
+    padding: 16px;
+    background: #f8faf8;
+    border: 1px solid #e4e9e4;
+    border-radius: 9px;
+}
+
+.profile-detail span {
+    display: block;
+    margin-bottom: 7px;
+    color: #666666;
+    font-size: 13px;
+}
+
+.profile-detail strong {
+    display: block;
+    color: #222222;
+    word-break: break-word;
+}
+
+/* KYC status */
+
+.kyc-status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    background: #f8faf8;
+    border: 1px solid #e4e9e4;
+    border-radius: 9px;
+}
+
+.kyc-status-row > span {
+    color: #555555;
+    font-weight: 600;
+}
+
+.kyc-status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.kyc-status.approved {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.kyc-status.pending {
+    background: #fff8e1;
+    color: #ef6c00;
+}
+
+.kyc-status.rejected {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.kyc-status.unknown {
+    background: #f5f5f5;
+    color: #666666;
+}
+
+.kyc-description {
+    margin: 15px 0;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.kyc-info {
+    padding: 15px;
+    background: #f1f8e9;
+    border: 1px solid #dcedc8;
+    border-radius: 9px;
+}
+
+.kyc-info strong {
+    color: #33691e;
+}
+
+.kyc-info p {
+    margin: 7px 0 0;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.profile-message {
+    max-width: 850px;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    background: #ffebee;
+    border: 1px solid #ffcdd2;
+    border-radius: 8px;
+    color: #c62828;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .profile-card,
+    .kyc-card {
+        padding: 18px;
+    }
+
+    .profile-details {
+        grid-template-columns: 1fr;
+    }
+
+    .kyc-status-row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
